@@ -5,7 +5,7 @@ type TMessageProps = {
 }
 
 export const MessageDiv = styled.div<TMessageProps>`
- width: max-content;
+  width: auto;
  background-color: ${(props) => props.typeMessage === 'ANSWER' ? '#633BBC' : '#07847E'};
  padding: 14px;
 
@@ -13,4 +13,8 @@ export const MessageDiv = styled.div<TMessageProps>`
  border-bottom-right-radius: ${(props) => props.typeMessage === 'QUESTION' ? '' : '10px'};
  border-top-right-radius: 10px;
  border-bottom-left-radius: 10px;
+
+ @media (min-width: 768px) {
+  width: max-content;
+ }
 `

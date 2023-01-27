@@ -10,6 +10,7 @@ function App() {
     id: number;
     mensagem: string | undefined;
   };
+
   const [messages, setMessages] = useState<Message[]>([]);
   const value = useRef<HTMLInputElement>(null);
   const listMessages = useRef<HTMLInputElement>(null);
@@ -26,11 +27,13 @@ function App() {
       await setMessages((prev) => [...prev, mensagem]);
     }
 
-    await listMessages.current?.lastElementChild?.scrollIntoView({ behavior: 'smooth' })
+    await listMessages.current?.lastElementChild?.scrollIntoView({
+      behavior: "smooth",
+    });
   }
 
   return (
-    <div className="h-[100vh] px-20 py-8 flex flex-col gap-8">
+    <div className="h-[100vh] px-10 lg:px-20 py-8 flex flex-col gap-8">
       <div className="flex flex-col gap-4">
         <div className="w-full flex justify-between text-[#E1E1E6]">
           <div className="flex gap-2">
@@ -44,13 +47,16 @@ function App() {
             </div>
           </div>
 
-          <X size={20} weight="bold" />
+          <X size={20} weight="bold" className="cursor-pointer" />
         </div>
         <p className="text-[#E1E1E6] font-roboto text-xs text-center">
           Hoje {new Date().getHours()}:{new Date().getMinutes()}
         </p>
       </div>
-      <div ref={listMessages} className="h-4/5 flex flex-col gap-8 overflow-y-scroll container-snap scroll-smooth">
+      <div
+        ref={listMessages}
+        className="h-full flex flex-col gap-8 overflow-y-scroll container-snap scroll-smooth"
+      >
         <ContainerMessage
           placeholder="Tive uma ideia incrível para um projeto! 😍"
           type="ANSWER"

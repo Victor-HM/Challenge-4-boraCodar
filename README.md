@@ -10,13 +10,24 @@ Desafios exclusivos, promovido pela Rockeseat. <br/>
 
 <br>
 
-<p align="center">
-  <img alt="projeto Challenger 4" src=".github/preview.png" width="100%">
+<p align="center" width='100%'>
+
+  <h3 align='center'>Web</h3>
+  <img alt="projeto Challenger 4" src=".github/preview_web.png" width="100%">
+
+  <h3 align='center'>Mobile</h3>
+  <img alt="projeto Challenger 4" src=".github/preview_mobile.png" width="50%" align='center'>
+
 </p>
 
-## ⚠ Status
+## ✅ Status
 
- - Em desenvolvimento ⚠
+ - Em produção ✅
+
+## 👨🏼‍💻 Funções
+
+ - Manipulação do scroll da tela
+ - Mudança do estilo do componente de mensagens dependendo do tipo de mensagem enviada
 
 ## 🚀 Tecnologias
 
@@ -36,7 +47,7 @@ Este projeto é o desafio 4 dos challengers semanais da Rocketseat #boraCodar
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](www.figma.com/file/BjOIcPvBa58FjAv7c0C1Jo/%23boraCodar---Desafio-4-(Community)). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/BjOIcPvBa58FjAv7c0C1Jo/%23boraCodar---Desafio-4-(Community)). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
