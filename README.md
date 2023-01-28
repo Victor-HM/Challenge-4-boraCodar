@@ -34,6 +34,7 @@ Desafios exclusivos, promovido pela Rockeseat. <br/>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React
+- Typescript
 - Tailwindcss
 - Styled Components
 - Phosphor React
